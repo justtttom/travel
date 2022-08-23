@@ -1,25 +1,40 @@
 import React from 'react';
 import logo from './logo.svg';
-import styles from './App.module.css'
+import styles from './App.module.css';
+import { Layout, Typography, Input, Menu, Button, Dropdown } from 'antd';
+import { GoldOutlined } from '@ant-design/icons';
 
 function App() {
   return (
     <div className={styles.App}>
-      <header className={styles['App-header']}>
-        <img src={logo} className={styles['App-logo']} alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className={styles['App-link']}
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <div className={styles['app-header']}>
+        {/* top-header */}
+        <div>
+          <Typography.Text>让旅游更轻松</Typography.Text>
+          <Dropdown.Button
+            style={{ marginLeft: 15 }}
+            overlay={
+              <Menu>
+                <Menu.Item>中文</Menu.Item>
+                <Menu.Item>English</Menu.Item>
+              </Menu>
+            }
+            icon={<GoldOutlined />}
+          >
+            语言
+          </Dropdown.Button>
+          <Button.Group>
+            <Button>注册</Button>
+            <Button>登陆</Button>
+          </Button.Group>
+        </div>
+        <Layout.Header className={styles['main-header']}>
+          <img src={logo} alt="" className={styles['App-logo']} />
+          <Typography.Title level={3} className={styles.title}>Tom travel</Typography.Title>
+          <Input.Search placeholder="请输入旅游目的地、主题、或者关键字" className={styles['search-input']} />
+        </Layout.Header>
+      </div>
+    </div >
   );
 }
 
