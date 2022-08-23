@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './Header.module.css';
-import logo from '../../assets/logo.svg';
+import tt from '../../assets/tt.svg';
 import { Layout, Typography, Input, Menu, Button, Dropdown } from 'antd';
 import { GoldOutlined } from '@ant-design/icons';
 
@@ -29,7 +29,7 @@ export const Header: React.FC = () => {
         </Button.Group>
       </div>
       <Layout.Header className={styles['main-header']}>
-        <img src={logo} alt="" className={styles['App-logo']} />
+        <img src={tt} alt="" className={styles['App-logo']} />
         <Typography.Title level={3} className={styles.title}>Tom travel</Typography.Title>
         <Input.Search placeholder="请输入旅游目的地、主题、或者关键字" className={styles['search-input']} />
       </Layout.Header>
