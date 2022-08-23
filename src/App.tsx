@@ -9,7 +9,7 @@ function App() {
     <div className={styles.App}>
       <div className={styles['app-header']}>
         {/* top-header */}
-        <div>
+        <div className={styles['top-header']}>
           <Typography.Text>让旅游更轻松</Typography.Text>
           <Dropdown.Button
             style={{ marginLeft: 15 }}
@@ -23,7 +23,7 @@ function App() {
           >
             语言
           </Dropdown.Button>
-          <Button.Group>
+          <Button.Group className={styles['button-group']}>
             <Button>注册</Button>
             <Button>登陆</Button>
           </Button.Group>
