@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './App.module.css';
-import { Header, Footer,sideMenu } from './components';
+import { Header, Footer, Carousel,SideMenu } from './components';
 import { Row, Col } from 'antd';
 
 
@@ -12,10 +12,10 @@ function App() {
       <div className={styles['page-content']}>
         <Row style={{ marginTop: 20 }}>
           <Col span={6}>
-            <div style={{ background: "yellow" }}><sideMenu></div>
+          <SideMenu />
           </Col>
           <Col span={18}>
-            <div style={{ background: "green" }}>跑马灯</div>
+            <Carousel />
           </Col>
         </Row>
       </div>
