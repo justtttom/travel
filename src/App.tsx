@@ -7,6 +7,10 @@ function App() {
   return (
     <div className={styles.App}>
       <Header />
+      {/* 页面内容 content */}
+      <div className={styles['page-content']}>
+        
+      </div>
       <Footer />
     </div >
   );
