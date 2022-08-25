@@ -1,4 +1,5 @@
-.content{
-  background-color: orange;
-  color: white;
+.content {
+    margin-top: 30px;
+    padding: 20px; 
+    background-color: white;
 }
