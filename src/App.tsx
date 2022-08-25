@@ -23,9 +23,19 @@ function App() {
           </Col>
         </Row>
         <ProductCollection
-        title={<Typography.Title level={2} type="warning">爆款推荐</Typography.Title>}
+        title={<Typography.Title level={3} type="warning">爆款推荐</Typography.Title>}
         sideImage={sideImage}
         products={productList1}
+        />
+        <ProductCollection
+        title={<Typography.Title level={3} type="danger">新品推荐</Typography.Title>}
+        sideImage={sideImage2}
+        products={productList2}
+        />
+        <ProductCollection
+        title={<Typography.Title level={2} type="success">国内游推荐</Typography.Title>}
+        sideImage={sideImage3}
+        products={productList3}
         />
       </div>
       <Footer />
