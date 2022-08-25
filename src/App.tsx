@@ -23,7 +23,7 @@ function App() {
           </Col>
         </Row>
         <ProductCollection
-        title={<Typography.Title level={1} type="warning">爆款推荐</Typography.Title>}
+        title={<Typography.Title level={2} type="warning">爆款推荐</Typography.Title>}
         sideImage={sideImage}
         products={productList1}
         />

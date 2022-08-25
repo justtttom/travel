@@ -9,5 +9,34 @@ interface PropsType {
 }
 
 export const ProductCollection:React.FC<PropsType> = ({title,sideImage,products}) => {
-  return
+  return <div className={styles.content}>
+    <Divider orientation="left">{title}</Divider>
+    <Row>
+      <Col span={4}>
+        <img src={sideImage} className={styles["side-image"]} alt="" />
+      </Col>
+      <Col span={20}>
+        <Row>
+          <col span={12}>
+            
+          </col>
+          <col span={12}></col>
+            <Row>
+              <col span={12}></col>
+              <col span={12}></col>
+            </Row>
+            <Row>
+            <col span={12}></col>
+            <col span={12}></col>
+            </Row>
+        </Row>
+        <Row>
+          <Col span={6}></Col>
+          <Col span={6}></Col>
+          <Col span={6}></Col>
+          <Col span={6}></Col>
+        </Row>
+      </Col>
+    </Row>
+  </div>
 }
