@@ -1,6 +1,7 @@
 import React from "react";
 import styles from './productCollection.module.css';
 import {Row,Col,Typography,Divider} from 'antd';
+import {ProductImage} from './prodcutImage'
 
 interface PropsType {
   title:JSX.Element;
@@ -9,7 +10,8 @@ interface PropsType {
 }
 
 export const ProductCollection:React.FC<PropsType> = ({title,sideImage,products}) => {
-  return <div className={styles.content}>
+  return( 
+  <div className={styles.content}>
     <Divider orientation="left">{title}</Divider>
     <Row>
       <Col span={4}>
@@ -18,7 +20,13 @@ export const ProductCollection:React.FC<PropsType> = ({title,sideImage,products}
       <Col span={20}>
         <Row>
           <col span={12}>
-            
+            <ProductImage
+              id={products[0].id}
+              size={"large"}
+              title={products[0].title}
+              imageSrc={products[0].touristRoutePictures[0].url}
+              price={products[0].prices}
+            />
           </col>
           <col span={12}></col>
             <Row>
@@ -38,5 +46,5 @@ export const ProductCollection:React.FC<PropsType> = ({title,sideImage,products}
         </Row>
       </Col>
     </Row>
-  </div>
+  </div>)
 }
