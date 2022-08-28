@@ -9,8 +9,9 @@ function App() {
     <div className={styles.App}>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<HomePage />} />
-        </Routes>
+          <Route  path="/" element={<HomePage />} />
+          <Route path="/sign"  />
+          </Routes>
       </BrowserRouter>
     </div >
   );
