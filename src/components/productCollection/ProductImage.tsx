@@ -1,5 +1,6 @@
 import React from 'react';
 import { Image, Typography } from "antd";
+import {useParams} from 'react-router-dom'
 
 interface PropsType {
     id: string | number;
